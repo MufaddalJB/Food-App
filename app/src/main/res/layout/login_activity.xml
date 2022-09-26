@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff5722">
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:src="@drawable/logo"
+    android:layout_marginTop="25dp">
+
+</ImageView>
+
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="375dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#ff0000"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/pas"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="243dp"
+        android:background="#FFFFFFFF"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textColor="#424242"
+        android:padding="10dp"
+        android:textColorHint="#424242"
+        android:textSize="20sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#424242"
+        android:layout_marginTop="185dp"
+        android:background="#FFFFFFFF"
+        android:drawableStart="@drawable/ic_action_phone"
+        android:hint=" Mobile number(10 digits)"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:phoneNumber="true"
+        android:textColorHint="#424242"
+        android:textSize="20sp">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlog"
+        android:layout_centerHorizontal="true"
+        android:text="@string/forgot_password"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp">
+
+    </TextView>
+</RelativeLayout>

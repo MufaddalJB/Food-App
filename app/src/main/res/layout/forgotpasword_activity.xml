@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff5722">
+    <ImageView
+        android:id="@+id/logg"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your registered mobile number and email below:"
+        android:layout_below="@+id/logg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/ednumber"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/enter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#FFFFFFFF"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:hint="  Mobile Number(10 digits)"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:textColor="#424242"
+        android:textColorHint="#424242">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edemail"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/ednumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFFFF"
+        android:inputType="text"
+        android:textColor="#424242"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:hint="  Email Address"
+        android:padding="10dp"
+        android:textColorHint="#424242"></EditText>
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:text="Next"
+        android:layout_below="@+id/edemail"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:backgroundTint="#ff0000">
+
+    </Button>
+
+
+</RelativeLayout>
